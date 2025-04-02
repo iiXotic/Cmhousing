@@ -33,6 +33,15 @@
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
             letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-top: 0.2rem;
+            letter-spacing: 0.5px;
         }
         
         nav {
@@ -497,6 +506,20 @@
                 font-size: 2.5rem;
             }
         }
+        
+        .coming-soon-notice {
+            text-align: center;
+            margin-top: -1rem;
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border: 1px dashed #ced4da;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            color: #343a40;
+            font-weight: 600;
+            line-height: 1.7;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -571,13 +594,14 @@
 </head>
 <body>
     <header>
-        <h1>C&M Manufactured Homes</h1>
+        <h1>C&M Manufactured Housing</h1>
+        <p class="tagline">The place for quality pre-owned housing</p>
     </header>
     
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#models" class="scroll-link">Available Homes</a></li>
+            <li><a href="#models" class="scroll-link">Available Housing</a></li>
             <li><a href="#contact" class="scroll-link">Contact Us</a></li>
         </ul>
     </nav>
@@ -585,20 +609,20 @@
     <div class="container">
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Find Your Dream Manufactured Home</h2>
-                <p>Quality, affordability, and style come together in our extensive selection of premium manufactured homes. Discover a better way to own your perfect home.</p>
-                <a href="#models" class="cta-button scroll-link">View Available Homes</a>
+                <h2>Find Your Dream Manufactured Housing</h2>
+                <p>Quality, affordability, and style come together in our extensive selection of premium pre-owned manufactured housing. Discover a better way to own your perfect housing.</p>
+                <a href="#models" class="cta-button scroll-link">View Available Housing</a>
                 <a href="#contact" class="cta-button green scroll-link">Request Information</a>
             </div>
         </section>
         
         <section id="models">
-            <h2>Available Homes</h2>
+            <h2>Available Housing</h2>
             <div class="homes-grid">
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/BAnSyqK.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Cappaert <span class="home-year">Year: 2020</span></h3>
+                        <h3>Hamilton <span class="home-year">Year: 2020</span></h3>
                         <p class="home-price">$63,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
@@ -612,12 +636,12 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/eL3XLdq.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Hamilton <span class="home-year">Year: 2023</span></h3>
-                        <p class="home-price">$65,995</p>
+                        <h3>Southern Edge<span class="home-year">Year: 2019</span></h3>
+                        <p class="home-price">$61,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 14x80</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 16x80</span>
                         </div>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
@@ -626,7 +650,7 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/7ucNAHO.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Clayton <span class="home-year">Year: 2023</span></h3>
+                        <h3>Clayton<span class="home-year">Year: 2020</span></h3>
                         <p class="home-price">$56,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
@@ -640,8 +664,8 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/ktibKJ6.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Lexington <span class="home-year">Year: 1999</span></h3>
-                        <p class="home-price">$28,995</p>
+                        <h3>Hamilton Madison<span class="home-year">Year: 2022</span></h3>
+                        <p class="home-price">$67,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
@@ -654,16 +678,19 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/taX5Gzb.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Southern Edge <span class="home-year">Year: 2022</span></h3>
-                        <p class="home-price">$61,995</p>
+                        <h3>Southern Energy<span class="home-year">Year: 2022</span></h3>
+                        <p class="home-price">$63,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 18x80</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 16x80</span>
                         </div>
-                        <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
+                        <a href="#contact" class="details-button scroll-link">Inquire About This Housing</a>
                     </div>
                 </div>
+            </div>
+            <div class="coming-soon-notice">
+                More quality manufactured housing coming soon!
             </div>
         </section>
         
@@ -671,7 +698,7 @@
             <div class="contact-intro">
                 <h2 class="contact-title">Get in Touch</h2>
                 <p class="contact-description">
-                    Fill out the form below and we'll get back to you as soon as possible to discuss your manufactured home needs.
+                    Fill out the form below and we'll get back to you as soon as possible to discuss your manufactured housing needs.
                 </p>
             </div>
 
