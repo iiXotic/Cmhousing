@@ -258,9 +258,23 @@
         
         .home-details h3 {
             font-size: 1.6rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.4rem;
             color: #1a4a70;
             font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+        
+        .home-year {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #555;
+            background-color: #e9ecef;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
         }
         
         .home-price {
@@ -584,14 +598,13 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/BAnSyqK.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Luxury Double-Wide</h3>
-                        <p class="home-price">$89,900</p>
+                        <h3>Cappaert <span class="home-year">Year: 2020</span></h3>
+                        <p class="home-price">$63,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 2 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 1,280 sq ft</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 16x80</span>
                         </div>
-                        <p class="home-description">Spacious open floor plan with modern finishes and energy-efficient appliances.</p>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
                 </div>
@@ -599,14 +612,13 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/eL3XLdq.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Cozy Single-Wide</h3>
-                        <p class="home-price">$65,500</p>
+                        <h3>Hamilton <span class="home-year">Year: 2023</span></h3>
+                        <p class="home-price">$65,995</p>
                         <div class="home-specs">
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 2 Beds</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 1 Bath</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 924 sq ft</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 14x80</span>
                         </div>
-                        <p class="home-description">Perfect starter home with efficient layout and quality construction.</p>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
                 </div>
@@ -614,14 +626,13 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/7ucNAHO.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Family Triple-Wide</h3>
-                        <p class="home-price">$110,000</p>
+                        <h3>Clayton <span class="home-year">Year: 2023</span></h3>
+                        <p class="home-price">$56,995</p>
                         <div class="home-specs">
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 4 Beds</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 2.5 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 1,680 sq ft</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 16x80</span>
                         </div>
-                        <p class="home-description">Spacious family home with premium finishes and generous storage space.</p>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
                 </div>
@@ -629,14 +640,13 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/ktibKJ6.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Senior-Friendly Model</h3>
-                        <p class="home-price">$72,400</p>
+                        <h3>Lexington <span class="home-year">Year: 1999</span></h3>
+                        <p class="home-price">$28,995</p>
                         <div class="home-specs">
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 2 Beds</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 2 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 1,040 sq ft</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 16x80</span>
                         </div>
-                        <p class="home-description">Single-level design with accessibility features and low-maintenance exterior.</p>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
                 </div>
@@ -644,14 +654,13 @@
                 <div class="home-card">
                     <div class="home-image" style="background-image: url('https://i.imgur.com/taX5Gzb.jpeg');"></div>
                     <div class="home-details">
-                        <h3>Lakeside Retreat</h3>
-                        <p class="home-price">$95,750</p>
+                        <h3>Southern Edge <span class="home-year">Year: 2022</span></h3>
+                        <p class="home-price">$61,995</p>
                         <div class="home-specs">
                             <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18M3 14h18M3 18h18"></path></svg> 3 Beds</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 2 Baths</span>
-                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 1,344 sq ft</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 9.75h7.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-.75.75h-7.5a.75.75 0 0 1-.75-.75v-5.25a.75.75 0 0 1 .75-.75z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75V9a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75v.75M6 9.75H4.5a.75.75 0 0 0-.75.75v6c0 .414.336.75.75.75h15a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H18M5.25 12a.75.75 0 0 1 .75-.75h.01a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75H6a.75.75 0 0 1-.75-.75V12z" /></svg> 2 Baths</span>
+                            <span><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6z"></path></svg> 18x80</span>
                         </div>
-                        <p class="home-description">Perfect vacation home with large windows and optional deck packages.</p>
                         <a href="#contact" class="details-button scroll-link">Inquire About This Home</a>
                     </div>
                 </div>
