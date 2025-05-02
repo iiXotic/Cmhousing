@@ -30,7 +30,7 @@
             --text-footer: #ffffff;
             --text-link: #3498db;
             --text-link-hover: #2980b9;
-            --text-price: #27ae60;
+            --text-price: #219d55;
             --text-button-primary: #ffffff;
             --text-button-secondary: #3498db;
             --text-sold: #ffffff;
@@ -41,12 +41,12 @@
             --border-input-focus: #3498db;
             --shadow-primary: rgba(0, 0, 0, 0.08);
             --shadow-secondary: rgba(0, 0, 0, 0.1);
-            --shadow-button: rgba(39, 174, 96, 0.4);
-            --shadow-button-hover: rgba(39, 174, 96, 0.6);
+            --shadow-button: rgba(33, 157, 85, 0.4);
+            --shadow-button-hover: rgba(30, 135, 75, 0.6);
             --shadow-input-focus: rgba(52, 152, 219, 0.1);
             --gradient-primary: linear-gradient(to right, #3498db, #1a4a70);
-            --gradient-button: linear-gradient(to right, #27ae60, #219653);
-            --gradient-button-hover: linear-gradient(to right, #219653, #1e874b);
+            --gradient-button: linear-gradient(to right, #219d55, #1e874b);
+            --gradient-button-hover: linear-gradient(to right, #1e874b, #1a7541);
         }
 
         .dark-mode {
@@ -71,7 +71,7 @@
             --text-footer: #ffffff;
             --text-link: #6fa8dc;
             --text-link-hover: #8bc0ea;
-            --text-price: #48c774;
+            --text-price: #3aaa64;
             --text-button-primary: #ffffff;
             --text-button-secondary: #6fa8dc;
             --text-sold: #ffffff;
@@ -82,12 +82,12 @@
             --border-input-focus: #6fa8dc;
             --shadow-primary: rgba(255, 255, 255, 0.05);
             --shadow-secondary: rgba(255, 255, 255, 0.08);
-            --shadow-button: rgba(72, 199, 116, 0.4);
-            --shadow-button-hover: rgba(72, 199, 116, 0.6);
+            --shadow-button: rgba(58, 170, 100, 0.4);
+            --shadow-button-hover: rgba(48, 156, 90, 0.6);
             --shadow-input-focus: rgba(111, 168, 220, 0.15);
             --gradient-primary: linear-gradient(to right, #6fa8dc, #3a7ab0);
-            --gradient-button: linear-gradient(to right, #48c774, #3aaa64);
-            --gradient-button-hover: linear-gradient(to right, #3aaa64, #309c5a);
+            --gradient-button: linear-gradient(to right, #3aaa64, #309c5a);
+            --gradient-button-hover: linear-gradient(to right, #309c5a, #2a8a4f);
         }
 
         * {
@@ -259,12 +259,13 @@
         }
         
         .cta-button.green {
-            background-color: var(--text-price);
+            /* Use a gradient for the base state for smoother transition */
+            background: linear-gradient(to right, var(--text-price), var(--text-price));
             box-shadow: 0 4px 15px var(--shadow-button);
         }
         
         .cta-button.green:hover {
-            background-color: var(--gradient-button-hover); /* Use gradient */
+            background: var(--gradient-button-hover);
             box-shadow: 0 6px 20px var(--shadow-button-hover);
         }
         
