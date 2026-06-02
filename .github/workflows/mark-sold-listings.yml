@@ -1,0 +1,74 @@
+name: Mark sold listings
+
+on:
+  push:
+    paths:
+      - .github/workflows/mark-sold-listings.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-listings:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mark requested listings as sold
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          content = path.read_text()
+
+          def replace_once(text, old, new, label):
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected 1 match, found {count}')
+              return text.replace(old, new, 1)
+
+          for img in [
+              'https://i.imgur.com/ktibKJ6.jpeg',
+              'https://i.imgur.com/HvTvAK8.jpeg',
+              'https://i.imgur.com/GRhHgg8.jpeg',
+          ]:
+              old = f'<div class="home-image" style="background-image: url(\'{img}\');"></div>'
+              new = (
+                  f'<div class="home-image" style="background-image: url(\'{img}\');">\n'
+                  '                        <div class="sold-overlay">SOLD</div>\n'
+                  '                    </div>'
+              )
+              content = replace_once(content, old, new, img)
+
+          button_old = '<a href="#contact" class="details-button scroll-link">Inquire About This Home</a>'
+          button_new = '<a href="#contact" class="details-button scroll-link sold">Inquire About This Housing</a>'
+
+          for heading in [
+              'Hamilton Madison<span class="home-year">Year: 2022</span>',
+              'Southern Energy <span class="home-year">Year: 2018</span>',
+              'Scotbilt <span class="home-year">Year: 2016</span>',
+          ]:
+              start = content.find(heading)
+              if start == -1:
+                  raise SystemExit(f'Missing listing heading: {heading}')
+              button = content.find(button_old, start)
+              if button == -1:
+                  raise SystemExit(f'Missing inquiry button after: {heading}')
+              content = content[:button] + button_new + content[button + len(button_old):]
+
+          if content.count('sold-overlay') != 7:
+              raise SystemExit(f'Expected 7 sold overlays, found {content.count("sold-overlay")}')
+          if content.count('details-button scroll-link sold') != 6:
+              raise SystemExit(f'Expected 6 sold buttons, found {content.count("details-button scroll-link sold")}')
+
+          path.write_text(content)
+          PY
+      - name: Commit inventory update and remove workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/mark-sold-listings.yml
+          git add index.html
+          git commit -m "Mark selected homes as sold"
+          git push
